@@ -95,6 +95,20 @@ footer img { height:20px; opacity:.9; }
 @media (max-width:1024px) { :root{--section-pad:70px 40px;} .grid-4{grid-template-columns:1fr 1fr;} .hero-section{grid-template-columns:1fr; padding-top:130px;} }
 @media (max-width:768px) { :root{--section-pad:56px 20px;} .top-nav{padding:14px 20px;} .top-nav .nav-cta span{display:none;} .hero-section{padding:120px 20px 50px;} .grid-2,.grid-4{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .form-wrap{padding:22px 16px;} footer{flex-direction:column;gap:16px;text-align:center;} }
   </style>
+  <!-- Google tag (gtag.js) + Ads-Conversion Whitepaper-Submit -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10973410408"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-10973410408');
+    /* Conversion feuert, wenn das HubSpot-Embed onFormSubmitted via postMessage meldet */
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.type === 'hsFormCallback' && e.data.eventName === 'onFormSubmitted') {
+        gtag('event', 'conversion', {'send_to': 'AW-10973410408/mgR7CPOMwL0cEOjow_Ao'});
+      }
+    });
+  </script>
 </head>
 <body>
 
